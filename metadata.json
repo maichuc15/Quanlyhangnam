@@ -1,0 +1,6 @@
+{
+  "name": "Lịch Gia Đình XR",
+  "description": "Ứng dụng quản lý ngày đặc biệt cho gia đình và dòng họ (ngày đám, ngày giỗ, ngày chạp, tiền đám, quỹ chung, lịch âm dương) hỗ trợ tương tác thực tế ảo WebXR.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

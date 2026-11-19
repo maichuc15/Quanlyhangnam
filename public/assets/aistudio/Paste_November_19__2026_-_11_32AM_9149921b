@@ -1,0 +1,562 @@
+Dựa trên nội dung bạn cung cấp, tôi đề xuất xây dựng sản phẩm dưới dạng một ứng dụng quản lý ngày đặc biệt dành cho gia đình và dòng họ, tập trung vào việc quản lý ngày đám, ngày giỗ, ngày chạp, các sự kiện quan trọng, tiền đám và quỹ chung.
+Tôi sẽ phát triển PRD theo hướng MVP thực tế, dễ sử dụng, ưu tiên điện thoại, thao tác nhanh và phù hợp với mọi thành viên trong gia đình.
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+MVP – Version 1.0
+Ứng dụng quản lý ngày đặc biệt
+Family & Clan Event Manager
+Quản lý ngày đám • Ngày giỗ • Ngày chạp • Công việc • Tiền đám • Quỹ gia đình
+Unify Calendar App Design. by Masudur Rahman for Uigeek Studio on Dribbble
+HeDa: Thu Chi Thông Minh
+Your Household Manager for Calendars, To-Dos, Emails & Family Life
+12
+Thuộc tính	Nội dung
+Tên sản phẩm	Family & Clan Event Manager
+Phiên bản	1.0 – MVP
+Nền tảng	Mobile-first, Responsive Web / PWA
+Người dùng	Gia đình, dòng họ, gia tộc
+Ngôn ngữ	Tiếng Việt
+Định hướng	Đơn giản – Nhanh – Dễ nhớ
+Mô hình	Quản lý cá nhân và nhóm gia đình
+1. Tổng quan sản phẩm (Product Overview)
+1.1. Giới thiệu
+Ứng dụng giúp các thành viên trong gia đình hoặc dòng họ quản lý tập trung những ngày đặc biệt trong năm, đặc biệt là:
+•	Ngày đám cưới, đám tang, đầy tháng, thôi nôi.
+•	Ngày giỗ, ngày chạp, ngày kỵ.
+•	Các sự kiện quan trọng của gia đình, dòng họ.
+•	Các khoản tiền đi đám, tiền phúng viếng.
+•	Quỹ tiền chung dành cho việc hiếu hỉ.
+•	Lịch trình tham dự hoặc không tham dự các sự kiện.
+Thay vì ghi nhớ bằng sổ tay, tin nhắn Zalo hoặc lịch điện thoại cá nhân, ứng dụng cung cấp một nơi quản lý thống nhất và có thông báo nhắc nhở.
+1.2. Tầm nhìn sản phẩm (Product Vision)
+Trở thành ứng dụng quản lý ngày đặc biệt và các hoạt động hiếu hỉ dành cho mỗi gia đình, giúp mọi người không bỏ lỡ ngày quan trọng, chủ động sắp xếp thời gian và kiểm soát tài chính minh bạch.
+1.3. Giá trị cốt lõi
+Giá trị	Mô tả
+Không bỏ lỡ	Nhắc nhở các ngày quan trọng
+Dễ quản lý	Tập trung tất cả sự kiện vào một nơi
+Minh bạch	Theo dõi tiền đám và quỹ chung
+Chủ động	Biết trước lịch trình để sắp xếp công việc
+Kết nối	Các thành viên cùng theo dõi lịch gia đình
+2. Vấn đề và giải pháp (Problem & Solution)
+2.1. Các vấn đề hiện tại
+Vấn đề	Hệ quả
+Ghi nhớ ngày đám bằng trí nhớ	Dễ quên ngày
+Lưu lịch ở nhiều nơi	Khó tra cứu
+Không biết ngày nào cần đi đám	Khó sắp xếp công việc
+Không theo dõi tiền đám	Khó kiểm soát chi tiêu
+Không có báo cáo tổng hợp	Không biết tổng tiền đã chi
+Quỹ chung thiếu minh bạch	Khó đối soát thu chi
+2.2. Giải pháp đề xuất
+Xây dựng một ứng dụng có 4 nhóm chức năng chính:
+Calendar deadline or event reminder notification on mobile phone
+1. Quản lý ngày đặc biệt
+Thêm, sửa, phân loại, đánh dấu các ngày đám, ngày giỗ và ngày chạp.
+E-wallet Berkahicon Lineal Color icon | Magnific (formerly Freepik)
+2. Quản lý tiền đám
+Ghi nhận khoản tiền dự kiến, thực tế và tổng hợp tiền đã chi.
+Todo list on smartphone screen
+3. Quản lý tham dự
+Xác nhận đi, không đi, chưa xác định và ghi nhận tình trạng hoàn thành.
+Calendar deadline or event reminder notification on a smartphone screen.
+4. Nhắc nhở thông minh
+Thông báo ngày sắp đến, ngày cần đi và các công việc liên quan.
+3. Đối tượng người dùng (Target Users)
+3.1. Nhóm người dùng chính
+Nhóm	Nhu cầu
+Chủ hộ gia đình	Quản lý ngày đám, ngày giỗ và tiền
+Người lớn tuổi	Xem ngày và nhận thông báo dễ dàng
+Thành viên gia đình	Theo dõi lịch và xác nhận tham dự
+Người quản lý gia tộc	Quản lý sự kiện và quỹ chung
+Thành viên trong dòng họ	Xem các ngày quan trọng của gia tộc
+3.2. Phân quyền người dùng
+Đề xuất có 3 vai trò:
+Vai trò	Quyền hạn
+Admin	Tạo nhóm, thêm/sửa/xóa sự kiện, quản lý quỹ và phân quyền
+Member	Xem lịch, xác nhận đi/không đi, ghi nhận khoản tiền cá nhân
+Viewer	Chỉ xem lịch và thông tin được chia sẻ
+Lưu ý: MVP có thể bắt đầu với mô hình một người quản lý và nhiều người xem. Phân quyền chi tiết triển khai sau khi xác thực nhu cầu sử dụng thực tế.
+4. Phạm vi sản phẩm (Product Scope)
+4.1. Phạm vi MVP
+Must Have
+STT	Tính năng	Mô tả
+1	Quick Add Event	Thêm nhanh ngày đám, ngày giỗ
+2	Event Priority	Phân loại mức độ quan trọng
+3	Money Tracking	Theo dõi tiền đám
+4	Attendance Tracking	Đánh dấu đi/không đi
+5	Event Reminder	Nhắc nhở sự kiện
+6	Annual Overview	Xem danh sách ngày trong năm
+7	Money Report	Báo cáo tổng tiền đám
+8	Family Fund	Quản lý quỹ đám
+4.2. Ngoài phạm vi MVP
+Future Version
+•	Đồng bộ Google Calendar.
+•	Gửi lời mời tham dự.
+•	Chat trong nhóm gia đình.
+•	Tự động nhận diện sự kiện từ tin nhắn Zalo.
+•	AI dự đoán ngày và gợi ý khoản tiền.
+•	Quản lý nhiều gia tộc phức tạp.
+•	Xuất báo cáo Excel/PDF nâng cao.
+5. Thiết kế chức năng chi tiết (Functional Requirements)
+5.1. Dashboard – Màn hình chính
+Đây là màn hình quan trọng nhất của ứng dụng.
+Nguyên tắc: Người dùng mở ứng dụng là biết ngay hôm nay có gì, sắp tới có đám nào, cần chuẩn bị bao nhiêu tiền.
+pinterest.com
+Thành phần màn hình
+Thành phần	Nội dung
+Header	Tên gia đình / Năm hiện tại
+Summary Cards	Tổng số sự kiện, số ngày sắp tới
+Upcoming Events	Danh sách sự kiện gần nhất
+Quick Add	Nút thêm sự kiện nhanh
+Money Summary	Tổng tiền đám và quỹ còn lại
+Attendance	Số sự kiện đã đi/chưa đi
+Bottom Navigation	Trang chủ, Lịch, Tài chính, Cá nhân
+Business Rules
+•	Mặc định hiển thị các sự kiện trong 30 ngày tới.
+•	Có thể chuyển sang xem toàn bộ năm.
+•	Sự kiện gần ngày hiện tại được ưu tiên hiển thị.
+•	Sự kiện quá hạn chưa xác nhận được làm nổi bật.
+•	Nút thêm sự kiện luôn dễ nhìn và dễ thao tác.
+5.2. Quick Add Event – Thêm nhanh ngày đám
+Core Feature 01
+Mục tiêu: Thêm một sự kiện chỉ trong khoảng 10–20 giây.
+Clana | Opeyemi Adetifa
+opeyemiadetifa.com
+Các trường thông tin
+Field	Kiểu dữ liệu	Bắt buộc
+Tên sự kiện	Text	Có
+Loại sự kiện	Dropdown	Có
+Người liên quan	Text	Không
+Ngày diễn ra	Date	Có
+Địa điểm	Text	Không
+Mức độ ưu tiên	Dropdown	Có
+Ghi chú	Text	Không
+Nhắc nhở	Multiple select	Không
+Loại sự kiện
+•	Đám cưới.
+•	Đám tang.
+•	Đám giỗ.
+•	Ngày chạp.
+•	Đầy tháng.
+•	Thôi nôi.
+•	Sinh nhật.
+•	Sự kiện gia đình.
+•	Khác.
+Phân loại mức độ quan trọng
+Mức độ	Màu sắc	Ý nghĩa
+Quan trọng	Đỏ	Sự kiện cần ưu tiên
+Bình thường	Cam	Sự kiện cần ghi nhớ
+Không bắt buộc	Xanh dương	Có thể tham gia nếu sắp xếp được
+Quy tắc nghiệp vụ
+•	Ngày sự kiện không được để trống.
+•	Cho phép sửa hoặc xóa sự kiện.
+•	Tự động sắp xếp sự kiện theo ngày gần nhất.
+•	Không tự động xóa sự kiện đã qua.
+•	Hỗ trợ tìm kiếm theo tên, loại sự kiện và năm.
+5.3. Priority Tag – Phân loại ngày quan trọng
+Core Feature 02
+Mục tiêu: Nhận biết nhanh sự kiện nào cần ưu tiên.
+Đề xuất sử dụng hệ thống màu sắc và nhãn trạng thái.
+Ví dụ hiển thị mức độ ưu tiên
+Đám cưới – Anh Hùng
+22/11/2026
+Quan trọng
+Ngày giỗ – Ông nội
+28/11/2026
+Bình thường
+Sinh nhật – Cháu An
+05/12/2026
+Không bắt buộc
+Quy tắc màu sắc theo thời gian
+Ngoài mức độ quan trọng, ứng dụng cần thể hiện khoảng cách đến ngày diễn ra:
+Thời gian	Hiển thị
+Hôm nay	Đỏ đậm
+Còn 1–3 ngày	Đỏ
+Còn 4–7 ngày	Cam
+Còn 8–30 ngày	Vàng
+Trên 30 ngày	Xanh
+Đã qua	Xám
+Lưu ý UX: Màu sắc theo thời gian và mức độ quan trọng nên là hai thông tin riêng biệt, tránh nhầm lẫn. Ví dụ, một đám giỗ rất quan trọng vẫn phải có nhãn quan trọng dù còn 60 ngày.
+5.4. Money Tracking – Quản lý tiền đám
+Core Feature 03
+Mục tiêu: Ghi nhận tiền dự kiến, tiền thực tế đã chi và tổng tiền đám trong năm.
+HeDa: Thu Chi Thông Minh
+smartexp.shapeecloud.com
+Thông tin tiền đám
+Field	Mô tả
+Sự kiện	Liên kết với ngày đám
+Người nhận	Người hoặc gia đình nhận tiền
+Số tiền dự kiến	Khoản tiền dự định mang đi
+Số tiền thực tế	Khoản tiền thực tế đã chi
+Ngày chi	Ngày thực hiện
+Nguồn tiền	Tiền cá nhân / Quỹ chung
+Ghi chú	Thông tin bổ sung
+Các chỉ số báo cáo
+1.	Tổng tiền dự kiến trong năm.
+2.	Tổng tiền thực tế đã đi đám.
+3.	Tổng số sự kiện đã chi.
+4.	Số tiền còn lại trong ngân sách dự kiến.
+5.	Tổng tiền đã sử dụng từ quỹ chung.
+Công thức:
+\[ \text{Tiền còn lại} = \text{Ngân sách dự kiến} - \text{Tổng tiền thực tế đã chi} \]
+Ví dụ:
+Khoản mục	Số tiền
+Ngân sách đầu năm	20.000.000đ
+Tổng tiền dự kiến	15.000.000đ
+Tổng tiền đã chi	8.500.000đ
+Ngân sách còn lại	11.500.000đ
+Cần phân biệt rõ ngân sách đầu năm và tổng tiền dự kiến để tránh cộng trừ sai lệch.
+Business Rules
+•	Chỉ tính vào tiền đã chi khi người dùng xác nhận khoản chi.
+•	Không đi đám thì không tự động tính tiền đã chi.
+•	Cho phép cập nhật số tiền thực tế sau khi sự kiện hoàn thành.
+•	Cho phép xem báo cáo theo tháng và năm.
+•	Mỗi khoản chi phải liên kết với một sự kiện hoặc có thể ghi nhận khoản chi độc lập.
+5.5. Family Fund – Quản lý quỹ đám
+Mục tiêu: Quản lý số tiền chung dành cho các hoạt động hiếu hỉ của gia đình hoặc dòng họ.
+Savee (@savee_io) on X
+twitter.com
+Các chức năng
+•	Thêm tiền vào quỹ.
+•	Ghi nhận tiền rút khỏi quỹ.
+•	Ghi nhận khoản đóng góp của thành viên.
+•	Theo dõi lịch sử thu chi.
+•	Hiển thị số dư hiện tại.
+Công thức
+\[ \text{Số dư quỹ} = \text{Tổng thu} - \text{Tổng chi} \]
+Ví dụ
+Giao dịch	Số tiền
+Quỹ đầu năm	10.000.000đ
+Thành viên đóng góp	+5.000.000đ
+Chi đám cưới	-2.000.000đ
+Chi đám tang	-1.000.000đ
+Số dư hiện tại	12.000.000đ
+Điểm cần lưu ý: Tiền cá nhân đi đám và tiền quỹ chung phải được tách biệt. Nếu dùng quỹ để chi cho sự kiện, khoản đó phải được ghi nhận một lần trong sổ quỹ và liên kết với sự kiện tương ứng để không bị tính trùng.
+5.6. Attendance Tracking – Quản lý đi và không đi
+Core Feature 04
+Mục tiêu: Người dùng xác nhận tình trạng tham dự để dễ dàng sắp xếp công việc.
+Woggle Scout App | Events, RSVPs & Volunteers
+woggleapp.com
+Trạng thái tham dự
+Trạng thái	Ý nghĩa
+Chưa xác định	Chưa quyết định
+Sẽ đi	Đã xác nhận tham dự
+Không đi	Không tham dự
+Đã đi	Đã tham dự xong
+Luồng sử dụng
+1.	Người dùng mở danh sách sự kiện.
+2.	Chọn một sự kiện.
+3.	Chạm vào trạng thái tham dự.
+4.	Hệ thống cập nhật trạng thái.
+5.	Dashboard cập nhật số lượng sự kiện tương ứng.
+Business Rules
+•	Mặc định sự kiện mới là Chưa xác định.
+•	Chỉ chuyển thành Đã đi khi người dùng xác nhận.
+•	Nếu chọn Không đi thì không yêu cầu nhập khoản tiền.
+•	Nếu đã đi, ứng dụng có thể gợi ý nhập số tiền thực tế.
+5.7. Reminder – Nhắc nhở ngày đặc biệt
+Core Feature 05
+Đây là chức năng mang lại giá trị lớn nhất của ứng dụng.
+OurCal | What's New | 2024.5.20
+ourcal.com
+Quy tắc thông báo đề xuất
+Thời điểm	Nội dung
+Trước 7 ngày	Sắp tới có sự kiện
+Trước 3 ngày	Nhắc chuẩn bị
+Trước 1 ngày	Nhắc lịch ngày mai
+Đúng ngày	Hôm nay có sự kiện
+Người dùng có thể bật/tắt từng mốc nhắc nhở.
+Ví dụ nội dung thông báo
+Lịch ngày đặc biệt
+Thông báo ứng dụng · 08:00
+Bây giờ
+Ngày mai có đám cưới!
+Anh Hùng tổ chức đám cưới vào ngày mai, 19/11/2026.
+•	Thời gian: 11:00
+•	Địa điểm: Nhà hàng ABC
+•	Trạng thái: Bạn đã xác nhận sẽ đi.
+Quy tắc kỹ thuật
+•	Tôn trọng múi giờ địa phương.
+•	Không gửi thông báo trùng lặp.
+•	Nếu sự kiện bị xóa hoặc đổi ngày, cập nhật lịch nhắc.
+•	Hỗ trợ thông báo trong ứng dụng và push notification.
+•	Với PWA, cần có quyền thông báo và điều kiện nền tảng phù hợp; không được phụ thuộc hoàn toàn vào việc trình duyệt đang mở.
+6. Luồng người dùng (User Flow)
+6.1. Luồng sử dụng tổng thể
+#chatgpt-mermaid-_r_ah_{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;fill:rgb(13, 13, 13);}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#chatgpt-mermaid-_r_ah_ .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_ah_ .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_ah_ .error-icon{fill:rgb(243, 243, 243);}#chatgpt-mermaid-_r_ah_ .error-text{fill:rgb(13, 13, 13);stroke:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ .edge-thickness-normal{stroke-width:1px;}#chatgpt-mermaid-_r_ah_ .edge-thickness-thick{stroke-width:3.5px;}#chatgpt-mermaid-_r_ah_ .edge-pattern-solid{stroke-dasharray:0;}#chatgpt-mermaid-_r_ah_ .edge-thickness-invisible{stroke-width:0;fill:none;}#chatgpt-mermaid-_r_ah_ .edge-pattern-dashed{stroke-dasharray:3;}#chatgpt-mermaid-_r_ah_ .edge-pattern-dotted{stroke-dasharray:2;}#chatgpt-mermaid-_r_ah_ .marker{fill:rgb(143, 143, 143);stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ah_ .marker.cross{stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ah_ svg{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;}#chatgpt-mermaid-_r_ah_ p{margin:0;}#chatgpt-mermaid-_r_ah_ .label{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ .cluster-label text{fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ .cluster-label span{color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ .cluster-label span p{background-color:transparent;}#chatgpt-mermaid-_r_ah_ .label text,#chatgpt-mermaid-_r_ah_ span{fill:rgb(13, 13, 13);color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ .node rect,#chatgpt-mermaid-_r_ah_ .node circle,#chatgpt-mermaid-_r_ah_ .node ellipse,#chatgpt-mermaid-_r_ah_ .node polygon,#chatgpt-mermaid-_r_ah_ .node path{fill:rgb(222, 234, 251);stroke:rgb(83, 154, 248);stroke-width:1px;}#chatgpt-mermaid-_r_ah_ .rough-node .label text,#chatgpt-mermaid-_r_ah_ .node .label text,#chatgpt-mermaid-_r_ah_ .image-shape .label,#chatgpt-mermaid-_r_ah_ .icon-shape .label{text-anchor:middle;}#chatgpt-mermaid-_r_ah_ .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#chatgpt-mermaid-_r_ah_ .rough-node .label,#chatgpt-mermaid-_r_ah_ .node .label,#chatgpt-mermaid-_r_ah_ .image-shape .label,#chatgpt-mermaid-_r_ah_ .icon-shape .label{text-align:center;}#chatgpt-mermaid-_r_ah_ .node.clickable{cursor:pointer;}#chatgpt-mermaid-_r_ah_ .root .anchor path{fill:rgb(143, 143, 143)!important;stroke-width:0;stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ah_ .arrowheadPath{fill:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ah_ .edgePath .path{stroke:rgb(143, 143, 143);stroke-width:1px;}#chatgpt-mermaid-_r_ah_ .flowchart-link{stroke:rgb(143, 143, 143);fill:none;}#chatgpt-mermaid-_r_ah_ .edgeLabel{background-color:rgb(252, 252, 252);text-align:center;}#chatgpt-mermaid-_r_ah_ .edgeLabel p{background-color:rgb(252, 252, 252);}#chatgpt-mermaid-_r_ah_ .edgeLabel rect{opacity:0.5;background-color:rgb(252, 252, 252);fill:rgb(252, 252, 252);}#chatgpt-mermaid-_r_ah_ .labelBkg{background-color:rgba(252, 252, 252, 0.5);}#chatgpt-mermaid-_r_ah_ .cluster rect{fill:rgb(243, 243, 243);stroke:rgba(0, 0, 0, 0.1);stroke-width:1px;}#chatgpt-mermaid-_r_ah_ .cluster text{fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ .cluster span{color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:12px;background:rgb(243, 243, 243);border:1px solid rgba(0, 0, 0, 0.1);border-radius:2px;pointer-events:none;z-index:100;}#chatgpt-mermaid-_r_ah_ .flowchartTitleText{text-anchor:middle;font-size:18px;fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ah_ rect.text{fill:none;stroke-width:0;}#chatgpt-mermaid-_r_ah_ .icon-shape,#chatgpt-mermaid-_r_ah_ .image-shape{background-color:rgb(252, 252, 252);text-align:center;}#chatgpt-mermaid-_r_ah_ .icon-shape p,#chatgpt-mermaid-_r_ah_ .image-shape p{background-color:rgb(252, 252, 252);padding:2px;}#chatgpt-mermaid-_r_ah_ .icon-shape .label rect,#chatgpt-mermaid-_r_ah_ .image-shape .label rect{opacity:0.5;background-color:rgb(252, 252, 252);fill:rgb(252, 252, 252);}#chatgpt-mermaid-_r_ah_ .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#chatgpt-mermaid-_r_ah_ .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#chatgpt-mermaid-_r_ah_ .node .neo-node{stroke:rgb(83, 154, 248);}#chatgpt-mermaid-_r_ah_ [data-look="neo"].node rect,#chatgpt-mermaid-_r_ah_ [data-look="neo"].cluster rect,#chatgpt-mermaid-_r_ah_ [data-look="neo"].node polygon{stroke:url(#chatgpt-mermaid-_r_ah_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ah_ [data-look="neo"].swimlane.cluster rect{filter:none;}#chatgpt-mermaid-_r_ah_ [data-look="neo"].node path{stroke:url(#chatgpt-mermaid-_r_ah_-gradient);stroke-width:1px;}#chatgpt-mermaid-_r_ah_ [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ah_ [data-look="neo"].node .neo-line path{stroke:rgb(83, 154, 248);filter:none;}#chatgpt-mermaid-_r_ah_ [data-look="neo"].node circle{stroke:url(#chatgpt-mermaid-_r_ah_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ah_ [data-look="neo"].node circle .state-start{fill:#000000;}#chatgpt-mermaid-_r_ah_ [data-look="neo"].icon-shape .icon{fill:url(#chatgpt-mermaid-_r_ah_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ah_ [data-look="neo"].icon-shape .icon-neo path{stroke:url(#chatgpt-mermaid-_r_ah_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ah_ .node text{font-size:14px;font-weight:600;letter-spacing:normal;fill:rgb(0, 79, 153);}#chatgpt-mermaid-_r_ah_ .edgeLabels text{font-size:13px;font-weight:600;letter-spacing:-0.08px;fill:rgb(0, 79, 153);}#chatgpt-mermaid-_r_ah_ .node tspan[font-weight="normal"],#chatgpt-mermaid-_r_ah_ .edgeLabels tspan[font-weight="normal"]{font-weight:600;}#chatgpt-mermaid-_r_ah_ .edgeLabel .label rect{opacity:1;rx:13px;ry:13px;fill:rgb(245, 250, 255);stroke:rgb(206, 219, 229);stroke-width:1px;}#chatgpt-mermaid-_r_ah_ .node rect,#chatgpt-mermaid-_r_ah_ .node circle,#chatgpt-mermaid-_r_ah_ .node ellipse,#chatgpt-mermaid-_r_ah_ .node polygon,#chatgpt-mermaid-_r_ah_ .node path{fill:rgb(229, 243, 255);stroke:rgba(0, 0, 0, 0.1);stroke-width:1px;}#chatgpt-mermaid-_r_ah_ .node rect{rx:16px;ry:16px;}#chatgpt-mermaid-_r_ah_ .mermaid-decision .label-container{fill:rgb(245, 250, 255);stroke:rgb(206, 219, 229);stroke-dasharray:2,2;}#chatgpt-mermaid-_r_ah_ .edgePaths .flowchart-link{stroke:rgb(143, 143, 143);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;}#chatgpt-mermaid-_r_ah_ .marker{fill:rgb(143, 143, 143);stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ah_ :root{--mermaid-font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";}Mở ứng dụngMàn hình chínhChọn thao tácThêm sự kiệnXem lịch nămXem tài chínhXem thông báoNhập thông tin nhanhLưu sự kiệnChọn sự kiệnĐi / Không điNhập tiền đám / Thu chi quỹXem chi tiết ngày
+6.2. Luồng thêm sự kiện nhanh
+#chatgpt-mermaid-_r_ao_{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;fill:rgb(13, 13, 13);}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#chatgpt-mermaid-_r_ao_ .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_ao_ .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_ao_ .error-icon{fill:rgb(243, 243, 243);}#chatgpt-mermaid-_r_ao_ .error-text{fill:rgb(13, 13, 13);stroke:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ .edge-thickness-normal{stroke-width:1px;}#chatgpt-mermaid-_r_ao_ .edge-thickness-thick{stroke-width:3.5px;}#chatgpt-mermaid-_r_ao_ .edge-pattern-solid{stroke-dasharray:0;}#chatgpt-mermaid-_r_ao_ .edge-thickness-invisible{stroke-width:0;fill:none;}#chatgpt-mermaid-_r_ao_ .edge-pattern-dashed{stroke-dasharray:3;}#chatgpt-mermaid-_r_ao_ .edge-pattern-dotted{stroke-dasharray:2;}#chatgpt-mermaid-_r_ao_ .marker{fill:rgb(143, 143, 143);stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ao_ .marker.cross{stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ao_ svg{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;}#chatgpt-mermaid-_r_ao_ p{margin:0;}#chatgpt-mermaid-_r_ao_ .label{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ .cluster-label text{fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ .cluster-label span{color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ .cluster-label span p{background-color:transparent;}#chatgpt-mermaid-_r_ao_ .label text,#chatgpt-mermaid-_r_ao_ span{fill:rgb(13, 13, 13);color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ .node rect,#chatgpt-mermaid-_r_ao_ .node circle,#chatgpt-mermaid-_r_ao_ .node ellipse,#chatgpt-mermaid-_r_ao_ .node polygon,#chatgpt-mermaid-_r_ao_ .node path{fill:rgb(222, 234, 251);stroke:rgb(83, 154, 248);stroke-width:1px;}#chatgpt-mermaid-_r_ao_ .rough-node .label text,#chatgpt-mermaid-_r_ao_ .node .label text,#chatgpt-mermaid-_r_ao_ .image-shape .label,#chatgpt-mermaid-_r_ao_ .icon-shape .label{text-anchor:middle;}#chatgpt-mermaid-_r_ao_ .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#chatgpt-mermaid-_r_ao_ .rough-node .label,#chatgpt-mermaid-_r_ao_ .node .label,#chatgpt-mermaid-_r_ao_ .image-shape .label,#chatgpt-mermaid-_r_ao_ .icon-shape .label{text-align:center;}#chatgpt-mermaid-_r_ao_ .node.clickable{cursor:pointer;}#chatgpt-mermaid-_r_ao_ .root .anchor path{fill:rgb(143, 143, 143)!important;stroke-width:0;stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ao_ .arrowheadPath{fill:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ao_ .edgePath .path{stroke:rgb(143, 143, 143);stroke-width:1px;}#chatgpt-mermaid-_r_ao_ .flowchart-link{stroke:rgb(143, 143, 143);fill:none;}#chatgpt-mermaid-_r_ao_ .edgeLabel{background-color:rgb(252, 252, 252);text-align:center;}#chatgpt-mermaid-_r_ao_ .edgeLabel p{background-color:rgb(252, 252, 252);}#chatgpt-mermaid-_r_ao_ .edgeLabel rect{opacity:0.5;background-color:rgb(252, 252, 252);fill:rgb(252, 252, 252);}#chatgpt-mermaid-_r_ao_ .labelBkg{background-color:rgba(252, 252, 252, 0.5);}#chatgpt-mermaid-_r_ao_ .cluster rect{fill:rgb(243, 243, 243);stroke:rgba(0, 0, 0, 0.1);stroke-width:1px;}#chatgpt-mermaid-_r_ao_ .cluster text{fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ .cluster span{color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:12px;background:rgb(243, 243, 243);border:1px solid rgba(0, 0, 0, 0.1);border-radius:2px;pointer-events:none;z-index:100;}#chatgpt-mermaid-_r_ao_ .flowchartTitleText{text-anchor:middle;font-size:18px;fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_ao_ rect.text{fill:none;stroke-width:0;}#chatgpt-mermaid-_r_ao_ .icon-shape,#chatgpt-mermaid-_r_ao_ .image-shape{background-color:rgb(252, 252, 252);text-align:center;}#chatgpt-mermaid-_r_ao_ .icon-shape p,#chatgpt-mermaid-_r_ao_ .image-shape p{background-color:rgb(252, 252, 252);padding:2px;}#chatgpt-mermaid-_r_ao_ .icon-shape .label rect,#chatgpt-mermaid-_r_ao_ .image-shape .label rect{opacity:0.5;background-color:rgb(252, 252, 252);fill:rgb(252, 252, 252);}#chatgpt-mermaid-_r_ao_ .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#chatgpt-mermaid-_r_ao_ .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#chatgpt-mermaid-_r_ao_ .node .neo-node{stroke:rgb(83, 154, 248);}#chatgpt-mermaid-_r_ao_ [data-look="neo"].node rect,#chatgpt-mermaid-_r_ao_ [data-look="neo"].cluster rect,#chatgpt-mermaid-_r_ao_ [data-look="neo"].node polygon{stroke:url(#chatgpt-mermaid-_r_ao_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ao_ [data-look="neo"].swimlane.cluster rect{filter:none;}#chatgpt-mermaid-_r_ao_ [data-look="neo"].node path{stroke:url(#chatgpt-mermaid-_r_ao_-gradient);stroke-width:1px;}#chatgpt-mermaid-_r_ao_ [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ao_ [data-look="neo"].node .neo-line path{stroke:rgb(83, 154, 248);filter:none;}#chatgpt-mermaid-_r_ao_ [data-look="neo"].node circle{stroke:url(#chatgpt-mermaid-_r_ao_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ao_ [data-look="neo"].node circle .state-start{fill:#000000;}#chatgpt-mermaid-_r_ao_ [data-look="neo"].icon-shape .icon{fill:url(#chatgpt-mermaid-_r_ao_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ao_ [data-look="neo"].icon-shape .icon-neo path{stroke:url(#chatgpt-mermaid-_r_ao_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_ao_ .node text{font-size:14px;font-weight:600;letter-spacing:normal;fill:rgb(0, 79, 153);}#chatgpt-mermaid-_r_ao_ .edgeLabels text{font-size:13px;font-weight:600;letter-spacing:-0.08px;fill:rgb(0, 79, 153);}#chatgpt-mermaid-_r_ao_ .node tspan[font-weight="normal"],#chatgpt-mermaid-_r_ao_ .edgeLabels tspan[font-weight="normal"]{font-weight:600;}#chatgpt-mermaid-_r_ao_ .edgeLabel .label rect{opacity:1;rx:13px;ry:13px;fill:rgb(245, 250, 255);stroke:rgb(206, 219, 229);stroke-width:1px;}#chatgpt-mermaid-_r_ao_ .node rect,#chatgpt-mermaid-_r_ao_ .node circle,#chatgpt-mermaid-_r_ao_ .node ellipse,#chatgpt-mermaid-_r_ao_ .node polygon,#chatgpt-mermaid-_r_ao_ .node path{fill:rgb(229, 243, 255);stroke:rgba(0, 0, 0, 0.1);stroke-width:1px;}#chatgpt-mermaid-_r_ao_ .node rect{rx:16px;ry:16px;}#chatgpt-mermaid-_r_ao_ .mermaid-decision .label-container{fill:rgb(245, 250, 255);stroke:rgb(206, 219, 229);stroke-dasharray:2,2;}#chatgpt-mermaid-_r_ao_ .edgePaths .flowchart-link{stroke:rgb(143, 143, 143);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;}#chatgpt-mermaid-_r_ao_ .marker{fill:rgb(143, 143, 143);stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_ao_ :root{--mermaid-font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";}DashboardNhấn nút +Nhập tên sự kiệnChọn loại sự kiệnChọn ngàyChọn mức độ quan trọngChọn lịch nhắcLưuSự kiện xuất hiện trênDashboard
+6.3. Luồng đi đám và ghi nhận tiền
+#chatgpt-mermaid-_r_av_{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;fill:rgb(13, 13, 13);}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#chatgpt-mermaid-_r_av_ .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_av_ .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_av_ .error-icon{fill:rgb(243, 243, 243);}#chatgpt-mermaid-_r_av_ .error-text{fill:rgb(13, 13, 13);stroke:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ .edge-thickness-normal{stroke-width:1px;}#chatgpt-mermaid-_r_av_ .edge-thickness-thick{stroke-width:3.5px;}#chatgpt-mermaid-_r_av_ .edge-pattern-solid{stroke-dasharray:0;}#chatgpt-mermaid-_r_av_ .edge-thickness-invisible{stroke-width:0;fill:none;}#chatgpt-mermaid-_r_av_ .edge-pattern-dashed{stroke-dasharray:3;}#chatgpt-mermaid-_r_av_ .edge-pattern-dotted{stroke-dasharray:2;}#chatgpt-mermaid-_r_av_ .marker{fill:rgb(143, 143, 143);stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_av_ .marker.cross{stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_av_ svg{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;}#chatgpt-mermaid-_r_av_ p{margin:0;}#chatgpt-mermaid-_r_av_ .label{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ .cluster-label text{fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ .cluster-label span{color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ .cluster-label span p{background-color:transparent;}#chatgpt-mermaid-_r_av_ .label text,#chatgpt-mermaid-_r_av_ span{fill:rgb(13, 13, 13);color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ .node rect,#chatgpt-mermaid-_r_av_ .node circle,#chatgpt-mermaid-_r_av_ .node ellipse,#chatgpt-mermaid-_r_av_ .node polygon,#chatgpt-mermaid-_r_av_ .node path{fill:rgb(222, 234, 251);stroke:rgb(83, 154, 248);stroke-width:1px;}#chatgpt-mermaid-_r_av_ .rough-node .label text,#chatgpt-mermaid-_r_av_ .node .label text,#chatgpt-mermaid-_r_av_ .image-shape .label,#chatgpt-mermaid-_r_av_ .icon-shape .label{text-anchor:middle;}#chatgpt-mermaid-_r_av_ .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#chatgpt-mermaid-_r_av_ .rough-node .label,#chatgpt-mermaid-_r_av_ .node .label,#chatgpt-mermaid-_r_av_ .image-shape .label,#chatgpt-mermaid-_r_av_ .icon-shape .label{text-align:center;}#chatgpt-mermaid-_r_av_ .node.clickable{cursor:pointer;}#chatgpt-mermaid-_r_av_ .root .anchor path{fill:rgb(143, 143, 143)!important;stroke-width:0;stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_av_ .arrowheadPath{fill:rgb(143, 143, 143);}#chatgpt-mermaid-_r_av_ .edgePath .path{stroke:rgb(143, 143, 143);stroke-width:1px;}#chatgpt-mermaid-_r_av_ .flowchart-link{stroke:rgb(143, 143, 143);fill:none;}#chatgpt-mermaid-_r_av_ .edgeLabel{background-color:rgb(252, 252, 252);text-align:center;}#chatgpt-mermaid-_r_av_ .edgeLabel p{background-color:rgb(252, 252, 252);}#chatgpt-mermaid-_r_av_ .edgeLabel rect{opacity:0.5;background-color:rgb(252, 252, 252);fill:rgb(252, 252, 252);}#chatgpt-mermaid-_r_av_ .labelBkg{background-color:rgba(252, 252, 252, 0.5);}#chatgpt-mermaid-_r_av_ .cluster rect{fill:rgb(243, 243, 243);stroke:rgba(0, 0, 0, 0.1);stroke-width:1px;}#chatgpt-mermaid-_r_av_ .cluster text{fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ .cluster span{color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:12px;background:rgb(243, 243, 243);border:1px solid rgba(0, 0, 0, 0.1);border-radius:2px;pointer-events:none;z-index:100;}#chatgpt-mermaid-_r_av_ .flowchartTitleText{text-anchor:middle;font-size:18px;fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_av_ rect.text{fill:none;stroke-width:0;}#chatgpt-mermaid-_r_av_ .icon-shape,#chatgpt-mermaid-_r_av_ .image-shape{background-color:rgb(252, 252, 252);text-align:center;}#chatgpt-mermaid-_r_av_ .icon-shape p,#chatgpt-mermaid-_r_av_ .image-shape p{background-color:rgb(252, 252, 252);padding:2px;}#chatgpt-mermaid-_r_av_ .icon-shape .label rect,#chatgpt-mermaid-_r_av_ .image-shape .label rect{opacity:0.5;background-color:rgb(252, 252, 252);fill:rgb(252, 252, 252);}#chatgpt-mermaid-_r_av_ .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#chatgpt-mermaid-_r_av_ .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#chatgpt-mermaid-_r_av_ .node .neo-node{stroke:rgb(83, 154, 248);}#chatgpt-mermaid-_r_av_ [data-look="neo"].node rect,#chatgpt-mermaid-_r_av_ [data-look="neo"].cluster rect,#chatgpt-mermaid-_r_av_ [data-look="neo"].node polygon{stroke:url(#chatgpt-mermaid-_r_av_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_av_ [data-look="neo"].swimlane.cluster rect{filter:none;}#chatgpt-mermaid-_r_av_ [data-look="neo"].node path{stroke:url(#chatgpt-mermaid-_r_av_-gradient);stroke-width:1px;}#chatgpt-mermaid-_r_av_ [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_av_ [data-look="neo"].node .neo-line path{stroke:rgb(83, 154, 248);filter:none;}#chatgpt-mermaid-_r_av_ [data-look="neo"].node circle{stroke:url(#chatgpt-mermaid-_r_av_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_av_ [data-look="neo"].node circle .state-start{fill:#000000;}#chatgpt-mermaid-_r_av_ [data-look="neo"].icon-shape .icon{fill:url(#chatgpt-mermaid-_r_av_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_av_ [data-look="neo"].icon-shape .icon-neo path{stroke:url(#chatgpt-mermaid-_r_av_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_av_ .node text{font-size:14px;font-weight:600;letter-spacing:normal;fill:rgb(0, 79, 153);}#chatgpt-mermaid-_r_av_ .edgeLabels text{font-size:13px;font-weight:600;letter-spacing:-0.08px;fill:rgb(0, 79, 153);}#chatgpt-mermaid-_r_av_ .node tspan[font-weight="normal"],#chatgpt-mermaid-_r_av_ .edgeLabels tspan[font-weight="normal"]{font-weight:600;}#chatgpt-mermaid-_r_av_ .edgeLabel .label rect{opacity:1;rx:13px;ry:13px;fill:rgb(245, 250, 255);stroke:rgb(206, 219, 229);stroke-width:1px;}#chatgpt-mermaid-_r_av_ .node rect,#chatgpt-mermaid-_r_av_ .node circle,#chatgpt-mermaid-_r_av_ .node ellipse,#chatgpt-mermaid-_r_av_ .node polygon,#chatgpt-mermaid-_r_av_ .node path{fill:rgb(229, 243, 255);stroke:rgba(0, 0, 0, 0.1);stroke-width:1px;}#chatgpt-mermaid-_r_av_ .node rect{rx:16px;ry:16px;}#chatgpt-mermaid-_r_av_ .mermaid-decision .label-container{fill:rgb(245, 250, 255);stroke:rgb(206, 219, 229);stroke-dasharray:2,2;}#chatgpt-mermaid-_r_av_ .edgePaths .flowchart-link{stroke:rgb(143, 143, 143);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;}#chatgpt-mermaid-_r_av_ .marker{fill:rgb(143, 143, 143);stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_av_ :root{--mermaid-font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";}Nhận thông báoMở sự kiệnCó tham dự?Xác nhận sẽ điXác nhận không điTham dự sự kiệnĐánh dấu đã điNhập số tiền thực tếCập nhật báo cáoLưu trạng thái không điCóKhông
+7. Cấu trúc giao diện và điều hướng (UI/UX)
+Tôi đề xuất sử dụng cấu trúc 4 tab chính để vẫn giữ được nguyên tắc một màn hình chính đơn giản.
+MOBILE APP – NAVIGATION
+Cấu trúc ứng dụng
+Trang chủ
+Tổng quan và ngày sắp tới
+Lịch
+Xem sự kiện theo ngày/tháng/năm
+Tài chính
+Tiền đám và quỹ chung
+Cá nhân
+Cài đặt và thành viên
+Trang chủ
+Lịch
+Tài chính
+Cá nhân
+7.1. Nguyên tắc thiết kế UI
+•	Ưu tiên màn hình điện thoại.
+•	Font chữ dễ đọc, kích thước đủ lớn cho người lớn tuổi.
+•	Nút bấm lớn, dễ thao tác.
+•	Tối đa 2–3 thao tác để hoàn thành một nhiệm vụ phổ biến.
+•	Hạn chế biểu mẫu dài.
+•	Dùng màu sắc và icon để nhận diện sự kiện.
+•	Các thông tin quan trọng phải xuất hiện ngay trên màn hình chính.
+7.2. Bảng màu đề xuất
+Màu	Mã màu	Sử dụng
+Primary	#2563EB	Màu thương hiệu
+Danger	#DC2626	Sự kiện gấp
+Warning	#F59E0B	Sự kiện cần chú ý
+Success	#16A34A	Đã hoàn thành
+Neutral	#64748B	Sự kiện đã qua
+Background	#F8FAFC	Nền giao diện
+8. Cấu trúc dữ liệu (Data Model)
+Đề xuất thiết kế cơ sở dữ liệu theo hướng có thể mở rộng từ một gia đình sang nhiều gia đình và dòng họ.
+8.1. Các bảng dữ liệu chính
+1. Users
+Field	Type
+id	UUID
+full_name	String
+phone	String, nullable
+avatar	String, nullable
+created_at	Timestamp
+2. Families
+Field	Type
+id	UUID
+family_name	String
+owner_id	UUID
+created_at	Timestamp
+3. Family Members
+Field	Type
+id	UUID
+family_id	UUID
+user_id	UUID
+role	Enum
+status	Enum
+4. Events
+Field	Type
+id	UUID
+family_id	UUID
+title	String
+event_type	Enum
+event_date	Date
+event_time	Time, nullable
+location	String
+priority	Enum
+description	Text
+created_by	UUID
+created_at	Timestamp
+5. Event Attendance
+Field	Type
+id	UUID
+event_id	UUID
+user_id	UUID
+attendance_status	Enum
+updated_at	Timestamp
+6. Event Expenses
+Field	Type
+id	UUID
+event_id	UUID
+user_id	UUID
+expected_amount	Decimal
+actual_amount	Decimal
+payment_source	Enum
+expense_date	Date
+note	Text
+7. Family Fund Transactions
+Field	Type
+id	UUID
+family_id	UUID
+transaction_type	Enum
+amount	Decimal
+event_id	UUID, nullable
+created_by	UUID
+transaction_date	Date
+note	Text
+8. Reminders
+Field	Type
+id	UUID
+event_id	UUID
+user_id	UUID
+remind_at	Timestamp
+channel	Enum
+status	Enum
+8.2. Quan hệ dữ liệu
+#chatgpt-mermaid-_r_bm_{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;fill:rgb(13, 13, 13);}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#chatgpt-mermaid-_r_bm_ .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_bm_ .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#chatgpt-mermaid-_r_bm_ .error-icon{fill:rgb(243, 243, 243);}#chatgpt-mermaid-_r_bm_ .error-text{fill:rgb(13, 13, 13);stroke:rgb(13, 13, 13);}#chatgpt-mermaid-_r_bm_ .edge-thickness-normal{stroke-width:1px;}#chatgpt-mermaid-_r_bm_ .edge-thickness-thick{stroke-width:3.5px;}#chatgpt-mermaid-_r_bm_ .edge-pattern-solid{stroke-dasharray:0;}#chatgpt-mermaid-_r_bm_ .edge-thickness-invisible{stroke-width:0;fill:none;}#chatgpt-mermaid-_r_bm_ .edge-pattern-dashed{stroke-dasharray:3;}#chatgpt-mermaid-_r_bm_ .edge-pattern-dotted{stroke-dasharray:2;}#chatgpt-mermaid-_r_bm_ .marker{fill:rgb(143, 143, 143);stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_bm_ .marker.cross{stroke:rgb(143, 143, 143);}#chatgpt-mermaid-_r_bm_ svg{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";font-size:16px;}#chatgpt-mermaid-_r_bm_ p{margin:0;}#chatgpt-mermaid-_r_bm_ .entityBox{fill:rgb(222, 234, 251);stroke:rgb(83, 154, 248);}#chatgpt-mermaid-_r_bm_ .relationshipLabelBox{fill:rgb(243, 243, 243);opacity:0.7;background-color:rgb(243, 243, 243);}#chatgpt-mermaid-_r_bm_ .relationshipLabelBox rect{opacity:0.5;}#chatgpt-mermaid-_r_bm_ .labelBkg{background-color:rgba(243, 243, 243, 0.5);}#chatgpt-mermaid-_r_bm_ .edgeLabel{background-color:rgb(252, 252, 252);}#chatgpt-mermaid-_r_bm_ .edgeLabel .label rect{fill:rgb(252, 252, 252);}#chatgpt-mermaid-_r_bm_ .edgeLabel .label text{fill:rgb(13, 13, 13);}#chatgpt-mermaid-_r_bm_ .edgeLabel .label{fill:rgb(83, 154, 248);font-size:14px;}#chatgpt-mermaid-_r_bm_ .label{font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";color:rgb(13, 13, 13);}#chatgpt-mermaid-_r_bm_ .edge-pattern-dashed{stroke-dasharray:8,8;}#chatgpt-mermaid-_r_bm_ .node rect,#chatgpt-mermaid-_r_bm_ .node circle,#chatgpt-mermaid-_r_bm_ .node ellipse,#chatgpt-mermaid-_r_bm_ .node polygon{fill:rgb(222, 234, 251);stroke:rgb(83, 154, 248);stroke-width:1px;}#chatgpt-mermaid-_r_bm_ .relationshipLine{stroke:rgb(143, 143, 143);stroke-width:1px;fill:none;}#chatgpt-mermaid-_r_bm_ .marker{fill:none!important;stroke:rgb(143, 143, 143)!important;stroke-width:1;}#chatgpt-mermaid-_r_bm_ [data-look=neo].labelBkg{background-color:rgba(243, 243, 243, 0.5);}#chatgpt-mermaid-_r_bm_ .node .neo-node{stroke:rgb(83, 154, 248);}#chatgpt-mermaid-_r_bm_ [data-look="neo"].node rect,#chatgpt-mermaid-_r_bm_ [data-look="neo"].cluster rect,#chatgpt-mermaid-_r_bm_ [data-look="neo"].node polygon{stroke:url(#chatgpt-mermaid-_r_bm_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_bm_ [data-look="neo"].swimlane.cluster rect{filter:none;}#chatgpt-mermaid-_r_bm_ [data-look="neo"].node path{stroke:url(#chatgpt-mermaid-_r_bm_-gradient);stroke-width:1px;}#chatgpt-mermaid-_r_bm_ [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_bm_ [data-look="neo"].node .neo-line path{stroke:rgb(83, 154, 248);filter:none;}#chatgpt-mermaid-_r_bm_ [data-look="neo"].node circle{stroke:url(#chatgpt-mermaid-_r_bm_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_bm_ [data-look="neo"].node circle .state-start{fill:#000000;}#chatgpt-mermaid-_r_bm_ [data-look="neo"].icon-shape .icon{fill:url(#chatgpt-mermaid-_r_bm_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_bm_ [data-look="neo"].icon-shape .icon-neo path{stroke:url(#chatgpt-mermaid-_r_bm_-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#chatgpt-mermaid-_r_bm_ :root{--mermaid-font-family:-apple-system-body,ui-sans-serif,-apple-system,system-ui,"Segoe UI",Helvetica,"Apple Color Emoji",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";}USERSFAMILY_MEMBERSFAMILIESEVENTSEVENT_ATTENDANCEEVENT_EXPENSESFAMILY_FUND_TRANSACTIONSREMINDERSjoinshasownshasconfirmstracksownslinkedschedulesreceives
+9. Yêu cầu phi chức năng (Non-functional Requirements)
+Hạng mục	Yêu cầu
+Hiệu suất	Tải màn hình chính mục tiêu dưới 2 giây trong điều kiện mạng tốt
+Responsive	Hoạt động tốt trên mobile, tablet, desktop
+Bảo mật	Phân quyền truy cập dữ liệu theo gia đình
+Dữ liệu	Sao lưu và có khả năng khôi phục
+UX	Thêm sự kiện trong 10–20 giây
+Ngôn ngữ	Hỗ trợ tiếng Việt
+Tiền tệ	VND, định dạng 1.000.000đ
+Ngày tháng	Định dạng DD/MM/YYYY
+Timezone	Asia/Ho_Chi_Minh
+Thông báo	Có khả năng bật/tắt thông báo
+Khả dụng	Xử lý trạng thái lỗi mạng và dữ liệu chưa đồng bộ
+Đăng nhập và sử dụng
+Để giảm rào cản, MVP nên hỗ trợ:
+•	Dùng thử nhanh mà không cần đăng ký phức tạp.
+•	Có thể bắt đầu với một gia đình cá nhân trên thiết bị.
+•	Khi cần đồng bộ giữa các thành viên, người dùng tạo tài khoản hoặc tham gia nhóm.
+•	Hỗ trợ khôi phục dữ liệu khi đổi thiết bị.
+Lưu ý quan trọng: Nếu không đăng nhập thì dữ liệu mặc định chỉ lưu trên thiết bị. Muốn nhiều thành viên cùng xem dữ liệu đồng bộ, cần có cơ chế tài khoản và xác thực.
+10. Chỉ số đánh giá thành công (Success Metrics)
+Đề xuất các KPI cho giai đoạn MVP:
+KPI	Mục tiêu ban đầu
+Thời gian thêm sự kiện	Dưới 20 giây
+Tỷ lệ người dùng thêm sự kiện thành công	Trên 95%
+Tỷ lệ thông báo gửi thành công	Trên 95%
+Tỷ lệ người dùng xác nhận trạng thái	Trên 70%
+Tỷ lệ lỗi khi lưu dữ liệu	Dưới 1%
+Người dùng quay lại hàng tuần	Trên 50%
+Đây là các mục tiêu giả định để kiểm thử MVP, cần điều chỉnh theo dữ liệu thực tế sau khi ra mắt.
+11. Kế hoạch phát triển sản phẩm (Roadmap)
+1.	Phase 1 – MVP Core
+Ưu tiên cao
+o	Thiết kế Dashboard.
+o	Thêm/sửa/xóa sự kiện.
+o	Phân loại mức độ quan trọng.
+o	Đánh dấu đi/không đi.
+o	Nhắc nhở ngày đặc biệt.
+2.	Phase 2 – Financial Management
+o	Quản lý tiền đám.
+o	Quản lý quỹ chung.
+o	Báo cáo tổng tiền.
+o	Thống kê theo tháng/năm.
+3.	Phase 3 – Family Collaboration
+o	Tạo nhóm gia đình.
+o	Mời thành viên.
+o	Phân quyền.
+o	Đồng bộ sự kiện và trạng thái tham dự.
+4.	Phase 4 – Smart Features
+o	Đồng bộ lịch điện thoại.
+o	Nhắc nhở thông minh.
+o	Báo cáo tài chính nâng cao.
+o	Lặp lại ngày giỗ hàng năm.
+12. Acceptance Criteria – Tiêu chí nghiệm thu
+Các tính năng được xem là hoàn thành khi đáp ứng các tiêu chí sau:
+ID	Tính năng	Tiêu chí nghiệm thu
+AC01	Quick Add	Tạo được sự kiện với tên và ngày
+AC02	Priority	Phân loại được 3 mức ưu tiên
+AC03	Event List	Hiển thị sự kiện theo thứ tự ngày
+AC04	Attendance	Chọn được đi, không đi, chưa xác định
+AC05	Completion	Đánh dấu đã đi
+AC06	Money	Ghi nhận tiền dự kiến và thực tế
+AC07	Fund	Ghi nhận giao dịch thu/chi
+AC08	Report	Tính chính xác tổng tiền
+AC09	Reminder	Gửi thông báo theo lịch cài đặt
+AC10	Annual View	Xem được toàn bộ sự kiện trong năm
+13. Các tình huống đặc biệt cần xử lý (Edge Cases)
+Đây là những tình huống quan trọng để tránh sai lệch dữ liệu khi sử dụng thực tế.
+1.	Hai sự kiện trùng ngày: Cho phép tạo nhiều sự kiện trong cùng một ngày.
+2.	Sự kiện đã qua: Vẫn hiển thị trong lịch sử.
+3.	Ngày giỗ hàng năm: Cho phép chọn lặp lại theo năm.
+4.	Thay đổi ngày sự kiện: Tự động cập nhật lịch nhắc.
+5.	Đã đi nhưng chưa nhập tiền: Cho phép bổ sung sau.
+6.	Không đi đám: Không ghi nhận chi phí thực tế.
+7.	Quỹ không đủ tiền: Hiển thị cảnh báo khi chi vượt số dư.
+8.	Nhiều người cùng sửa: Có cơ chế cập nhật dữ liệu và tránh ghi đè không kiểm soát.
+9.	Sự kiện bị xóa: Hủy các thông báo liên quan.
+10.	Năm nhuận: Xử lý đúng ngày 29/02 và các sự kiện lặp hàng năm.
+14. Đề xuất cải tiến quan trọng cho sản phẩm
+Sau khi phân tích yêu cầu, tôi nhận thấy có 3 tính năng nên được ưu tiên bổ sung vào thiết kế ngay từ đầu, dù có thể triển khai ở phiên bản sau.
+14.1. Quản lý ngày giỗ lặp lại hàng năm
+Đây là tính năng rất phù hợp với nhu cầu quản lý gia đình và dòng họ.
+Ví dụ:
+•	Giỗ ông nội: 15/03 âm lịch.
+•	Giỗ bà nội: 20/08 âm lịch.
+•	Giỗ tổ: 12/12 âm lịch.
+Người dùng chỉ cần nhập một lần, hệ thống tự động tạo ngày tương ứng cho các năm tiếp theo.
+Đặc biệt, nên hỗ trợ lịch âm và lịch dương. Đây là yêu cầu quan trọng tại Việt Nam vì ngày giỗ, ngày chạp thường được tính theo lịch âm.
+14.2. Quản lý theo lịch âm và lịch dương
+Hướng dẫn cách xem lịch âm trên Zalo đơn giản, chi tiết nhất
+aeonmall-tanphuceladon.com.vn
+Đề xuất:
+•	Hiển thị song song ngày âm và ngày dương.
+•	Chọn ngày theo lịch âm khi tạo ngày giỗ.
+•	Tự động quy đổi sang ngày dương để đặt thông báo.
+•	Hỗ trợ tháng nhuận âm lịch.
+•	Cho phép chỉnh sửa nếu ngày giỗ có quy ước riêng.
+Đây là tính năng có giá trị thực tế rất cao đối với đối tượng người dùng mục tiêu.
+14.3. Chế độ quản lý nhiều gia đình/dòng họ
+Một thành viên có thể thuộc nhiều nhóm:
+•	Gia đình bên nội.
+•	Gia đình bên ngoại.
+•	Gia tộc.
+•	Nhóm họ hàng.
+Mỗi nhóm có lịch sự kiện, thành viên và quỹ riêng. Tuy nhiên, dữ liệu phải được tách biệt rõ ràng để tránh nhầm lẫn.
+15. Đề xuất phiên bản MVP cuối cùng
+Sau khi cân nhắc phạm vi và độ phức tạp, tôi khuyến nghị phiên bản đầu tiên chỉ tập trung vào 6 module sau:
+Recommended MVP
+6 module cốt lõi
+Đủ để giải quyết bài toán thực tế mà không làm ứng dụng trở nên phức tạp.
+Dashboard
+Tổng quan ngày đặc biệt và các sự kiện sắp tới
+01
+Event Management
+Thêm, sửa, xóa, phân loại ngày đám và ngày giỗ
+02
+Attendance
+Xác nhận đi, không đi và đã đi
+03
+Money Tracking
+Ghi nhận tiền dự kiến và tiền thực tế
+04
+Family Fund
+Theo dõi quỹ chung và lịch sử thu chi
+05
+Reminder & Lunar Calendar
+Nhắc ngày quan trọng và hỗ trợ ngày âm lịch
+06
+16. Định hướng thiết kế sản phẩm thực tế
+Tôi đề xuất định hướng thiết kế giao diện như sau:
+•	Phong cách: Minimalist, hiện đại, gần gũi.
+•	Màu chủ đạo: Xanh dương kết hợp trắng.
+•	Màu cảnh báo: Đỏ, cam, vàng.
+•	Font chữ: Inter hoặc Be Vietnam Pro.
+•	Kích thước ưu tiên: 390 × 844 px.
+•	Thiết kế mobile-first, có thể triển khai PWA.
+•	Nút thêm nhanh luôn hiển thị.
+•	Dashboard là trung tâm của toàn bộ ứng dụng.
+Một nguyên tắc rất quan trọng: Ứng dụng này không nên được thiết kế giống một phần mềm kế toán hoặc một ứng dụng quản lý công việc chuyên nghiệp. Nó cần mang cảm giác như một cuốn lịch gia đình thông minh, dễ sử dụng và dễ ghi nhớ.
+17. Bước tiếp theo: Xây dựng bản thiết kế UI/UX
+Để chuyển PRD thành sản phẩm có thể phát triển, tôi đề xuất bước tiếp theo là xây dựng bộ thiết kế UI/UX gồm 5 màn hình chính:
+Mobile Calendar/Task app by Sydney Dawkins on Dribbble
+01. Dashboard
+Tổng quan ngày đám, ngày giỗ và sự kiện gần nhất.
+Calendar App UI Design by Amit Arora on Dribbble
+02. Calendar
+Lịch sự kiện theo tháng, năm và ngày âm.
+Event Calendar Mobile App UI Kit for Figma, Sketch & XD | UIworkshop
+03. Quick Add
+Thêm ngày đám trong vài thao tác.
+trang chủ – backup - Sổ Thu Chi MISA - Ứng dụng quản lý chi tiêu
+04. Financial
+Quản lý tiền đám và quỹ gia đình.
+Trước khi chuyển sang thiết kế chi tiết, có một quyết định sản phẩm rất quan trọng cần chốt:
+1. Ứng dụng sẽ quản lý theo mô hình nào?
+Cá nhân: Mỗi người tự quản lý lịch và tiền đám.
+Gia đình: Một người quản lý, các thành viên cùng xem và cập nhật.
+Gia tộc: Nhiều gia đình cùng tham gia, có phân quyền và quỹ chung.
+2. Lịch sử dụng trong ứng dụng?
+Chỉ lịch dương.
+Cả lịch âm và lịch dương.
+Chỉ lịch âm.
+3. Hình thức đăng nhập?
+Không cần đăng ký, vào sử dụng ngay.
+Đăng nhập bằng số điện thoại và OTP.
+Một người tạo nhóm, thành viên tham gia bằng mã mời.
+Xác nhận định hướng sản phẩm 
+Ba quyết định này sẽ ảnh hưởng trực tiếp đến kiến trúc dữ liệu, phân quyền, trải nghiệm người dùng và phạm vi phát triển MVP.
+
